@@ -7,14 +7,14 @@ void drawChessboard() {
         std::cout << i << " ";
         for (int j = 0; j < 8; ++j) {
             if ((i + j) % 2 == 0) {
-                std::cout << "\033[47m"; // white background
+                std::cout << "\033[47m"; 
             }
             else {
-                std::cout << "\033[40m"; // black background
+                std::cout << "\033[40m"; 
             }
             std::cout << " " << letters[j] << i << " ";
         }
-        std::cout << "\033[0m" << std::endl; // reset background color
+        std::cout << "\033[0m" << std::endl;  
     }
 
     std::cout << "   ";
